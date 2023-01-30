@@ -7,4 +7,6 @@ Repo นี้สร้างขึ้นเพื่อเก็บโปรเ
 
 ## Kdai crew list
 
-## project list
+## Project list
+    1.Card detection using tensorflow V.1
+    
