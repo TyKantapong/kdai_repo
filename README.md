@@ -124,7 +124,9 @@ TensorFlow
         └─ README.md
 ```
   annotations ไว้เก็บ .csv and .record or .tfrecord
-  training ไวเก็บ .config and .pbtxt
+  
+  training ไว้เก็บ .config and .pbtxt
+  
   pre-trained-model เลือก model จาก https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
   โหลดและแตกไฟล์เก็บไว้ (ในที่นี้แนะนำ Faster RCNN)
   
@@ -201,19 +203,24 @@ python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOL
   
   Navigate to C:\tensorflow1\models\research\object_detection\samples\configs and copy the faster_rcnn_inception_v2_pets.config (ตามโมเดลที่เลือกโหลดจาก model zoo) file
   แก้ไขบางบรรทัดต่อไปนี้ (เลขบรรทัดอาจะคลาดเคลื่อน)
+  
+  ```
+  C:/tensorflow_gpu/models/research/object_detection = [PATH_TO_MODEL]
+  อาจะเปลี่ยนแปลงเป็นตำแหน่งใน workspace ที่เก็บไฟล์นั้นๆในแต่ละหัวข้อ
+  ```
   ```
   Line 9. Change num_classes to the number of different objects you want the classifier to detect.
   ```
 ```
 Line 106. Change fine_tune_checkpoint to:
 
-fine_tune_checkpoint : "C:/tensorflow1/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
+fine_tune_checkpoint : "C:/tensorflow_gpu/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
 ```
 ```
 Lines 123 and 125. In the train_input_reader section, change input_path and label_map_path to:
 
-input_path : "C:/tensorflow1/models/research/object_detection/train.record"
-label_map_path: "C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt"
+input_path : "C:/tensorflow_gpu/models/research/object_detection/train.record"
+label_map_path: "C:/tensorflow_gpu/models/research/object_detection/training/labelmap.pbtxt"
 ```
 ```
 Line 130. Change num_examples to the number of images you have in the \images\test directory.
@@ -221,8 +228,8 @@ Line 130. Change num_examples to the number of images you have in the \images\te
 ```
 Lines 135 and 137. In the eval_input_reader section, change input_path and label_map_path to:
 
-input_path : "C:/tensorflow1/models/research/object_detection/test.record"
-label_map_path: "C:/tensorflow1/models/research/object_detection/training/labelmap.pbtxt"
+input_path : "C:/tensorflow_gpu/models/research/object_detection/test.record"
+label_map_path: "C:/tensorflow_gpu/models/research/object_detection/training/labelmap.pbtxt"
 ```
   
 ### run train
