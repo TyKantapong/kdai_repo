@@ -8,7 +8,7 @@ Repo นี้สร้างขึ้นเพื่อเก็บโปรเ
 ## Kdai crew list
 
    1. ZEN "THE EVENT" :space_invader:
-   2. "GOOD"
+   2. GOOD "THE GOOD ONE"
 
 ## Project list
     1.Card detection using tensorflow V.1
