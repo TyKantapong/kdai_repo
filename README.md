@@ -7,7 +7,7 @@ Repo นี้สร้างขึ้นเพื่อเก็บโปรเ
 
 ## Kdai crew list
 
-   1. "ZEN THE EVENT" :space_invader:
+   1. ZEN "THE EVENT" :space_invader:
    2. "GOOD"
 
 ## Project list
