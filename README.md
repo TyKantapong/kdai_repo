@@ -6,8 +6,9 @@ Repo นี้สร้างขึ้นเพื่อเก็บโปรเ
 จุดประสงค์เพื่อเก็บไว้เป็นผลงาน และ ส่งต่อให้รุ่นต่อๆไปศึกษา
 
 ## Kdai crew list
-    1. zc.pbc.gg@gmail.com "ZEN THE EVENT" :space_invader:
-    2. 
+
+   1. "ZEN THE EVENT" :space_invader:
+   2. "GOOD"
 
 ## Project list
     1.Card detection using tensorflow V.1
