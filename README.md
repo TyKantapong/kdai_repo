@@ -10,6 +10,7 @@ Repo นี้สร้างขึ้นเพื่อเก็บโปรเ
    1. ZEN "THE EVENT" :space_invader:
    2. GOOD "THE GOOD ONE"
    3. GAMUT "THE WATCHER" :purple_heart:
+   4. LUNLUN "THE LITTLE GIRL"
 
 ## Project list
     1.Card detection using tensorflow V.1
